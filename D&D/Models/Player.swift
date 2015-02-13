@@ -14,7 +14,7 @@ class Player {
     
     var name: String = ""
     
-    var races: [Race] = []
+    var race: Race! = nil
     var classes: [Class] = []
     
     var level: Int {

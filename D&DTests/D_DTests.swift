@@ -16,9 +16,12 @@ class D_DTests: XCTestCase {
     }
     
     func testExample() {
-        var character = Player()
+        let character = Player()
         
-        character.classes = [ Class(character: character, name: "Goblin", hitDie: Die(sides: 8), level: 1)]
+        character.race = Race(character: character, name: .Human)
+        
+        let characterClass = Class(character: character, name: .Rogue, hitDie: Die(sides: 8), level: 1)
+        character.classes = [characterClass]
         
         character.abilities[.Strength].score = 12
         character.abilities[.Dexterity].score = 17
@@ -27,18 +30,18 @@ class D_DTests: XCTestCase {
         character.abilities[.Wisdom].score = 11
         character.abilities[.Charisma].score = 15
         
-        println(character.abilities[.Constitution].modifier)
-        println(character.abilities[.Dexterity].modifier)
+        // MARK: -
         
-        println(character.classes.count)
-        println(character.level)
+        XCTAssertEqual(character.abilities[.Constitution].modifier, 1, "")
+        XCTAssertEqual(character.abilities[.Dexterity].modifier, 3, "")
         
-        println(character.hitPointsMax)
+        XCTAssertEqual(character.level, 1, "")
+        XCTAssertEqual(character.bonus, 2, "")
         
-        println(character.bonus)
+        XCTAssertEqual(character.hitPointsMax, 10, "")
         
-        println(character.skills[.Deception].roll)
-        println(character.skills[.Deception].passive)
+        XCTAssertEqual(character.skills[.Deception].roll, 2, "")
+        XCTAssertEqual(character.skills[.Deception].passive, 12, "")
         
         XCTAssert(true, "Pass")
     }

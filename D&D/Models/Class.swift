@@ -8,8 +8,12 @@
 
 struct Class {
     
+    enum Name {
+        case Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard
+    }
+    
     unowned let character: Player
-    let name: String
+    let name: Name
     let hitDie: Die
     
     var level: Int

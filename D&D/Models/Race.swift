@@ -8,7 +8,33 @@
 
 struct Race {
     
-    unowned let character: Player
-    let name: String
+    enum Name {
+        case Dwarf, Elf, Halfling, Human, Dragonborn, Gnome, HalfElf, HalfOrc, Tiefling, Aasimar
+    }
     
+    unowned let character: Player
+    let name: Name
+    
+    /*
+    
+    Subraces
+    
+    Dwarf
+    - Hill
+    - Mountain
+    
+    Elf
+    - High
+    - Wood
+    - Dark
+    
+    Halfling
+    - Lightfoot
+    - Stout
+    
+    Gnome
+    - Full subraces?
+    
+    */
+
 }
