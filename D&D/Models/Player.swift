@@ -25,32 +25,27 @@ class Player {
         return _level
     }
     
-    var classesHP: Int {
-        var _hitPoints = 0
-        for i in 0 ..< classes.count {
-            _hitPoints += classes[i].hitPoints
-        }
-        return _hitPoints
-    }
-    
-    var classesCon: Int {
-        var _constitution = 0
-        for i in 0 ..< classes.count {
-            _constitution += classes[i].constitution
-        }
-        return _constitution
-    }
-    
     lazy var abilities: Abilities = Abilities(character: self)
     lazy var skills: Skills = Skills(character: self)
     
     var hitPoints: Int = 0
     var hitPointsMin: Int = 0
-    var hitPointsMax: Int { return classesHP + classesCon }
+    var hitPointsMax: Int {
+        var _hitPoints = 0, _constitution = 0
+        
+        for i in 0 ..< classes.count {
+            _hitPoints += classes[i].hitPoints
+            _constitution += classes[i].constitution
+        }
+        
+        return _hitPoints + _constitution
+    }
     
     var experiencePoints: Int = 0
     var experiencePointsMin: Int = 0
     var experiencePointsMax: Int = 0
+    
+    var inspired: Bool = false
     
     var speed: Int = 25 // ft/s
     
