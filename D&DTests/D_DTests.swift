@@ -13,24 +13,38 @@ class D_DTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
     }
     
     func testExample() {
-        // This is an example of a functional test case.
+        var character = Player()
+        
+        character.classes = [ Class(character: character, name: "Goblin", hitDie: Die(sides: 8), level: 1)]
+        
+        character.abilities[.Strength].score = 12
+        character.abilities[.Dexterity].score = 17
+        character.abilities[.Constitution].score = 13
+        character.abilities[.Intelligence].score = 14
+        character.abilities[.Wisdom].score = 11
+        character.abilities[.Charisma].score = 15
+        
+        println(character.abilities[.Constitution].modifier)
+        println(character.abilities[.Dexterity].modifier)
+        
+        println(character.classes.count)
+        println(character.level)
+        
+        println(character.hitPointsMax)
+        
+        println(character.bonus)
+        
+        println(character.skills[.Deception].roll)
+        println(character.skills[.Deception].passive)
+        
         XCTAssert(true, "Pass")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    override func tearDown() {
+        super.tearDown()
     }
     
 }

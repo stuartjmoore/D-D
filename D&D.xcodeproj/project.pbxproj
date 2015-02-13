@@ -13,6 +13,22 @@
 		19C5DF751A8E3D2E0020546C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C5DF741A8E3D2E0020546C /* Images.xcassets */; };
 		19C5DF781A8E3D2E0020546C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19C5DF761A8E3D2E0020546C /* LaunchScreen.xib */; };
 		19C5DF841A8E3D2E0020546C /* D_DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF831A8E3D2E0020546C /* D_DTests.swift */; };
+		19C5DF901A8E3DB50020546C /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF8F1A8E3DB50020546C /* Skills.swift */; };
+		19C5DF911A8E3DB50020546C /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF8F1A8E3DB50020546C /* Skills.swift */; };
+		19C5DF931A8E3DE50020546C /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF921A8E3DE50020546C /* Abilities.swift */; };
+		19C5DF941A8E3DE50020546C /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF921A8E3DE50020546C /* Abilities.swift */; };
+		19C5DF961A8E3E020020546C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF951A8E3E020020546C /* Player.swift */; };
+		19C5DF971A8E3E020020546C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF951A8E3E020020546C /* Player.swift */; };
+		19C5DF991A8E3E2C0020546C /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF981A8E3E2C0020546C /* Race.swift */; };
+		19C5DF9A1A8E3E2C0020546C /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF981A8E3E2C0020546C /* Race.swift */; };
+		19C5DF9C1A8E3E490020546C /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF9B1A8E3E490020546C /* Class.swift */; };
+		19C5DF9D1A8E3E490020546C /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF9B1A8E3E490020546C /* Class.swift */; };
+		19C5DF9F1A8E3E650020546C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF9E1A8E3E650020546C /* Die.swift */; };
+		19C5DFA01A8E3E650020546C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF9E1A8E3E650020546C /* Die.swift */; };
+		19C5DFA31A8E3EA20020546C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DFA21A8E3EA20020546C /* Helpers.swift */; };
+		19C5DFA41A8E3EA20020546C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DFA21A8E3EA20020546C /* Helpers.swift */; };
+		19C5DFA61A8E3EC80020546C /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DFA51A8E3EC80020546C /* Language.swift */; };
+		19C5DFA71A8E3EC80020546C /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DFA51A8E3EC80020546C /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,14 @@
 		19C5DF7D1A8E3D2E0020546C /* D&DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "D&DTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C5DF821A8E3D2E0020546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19C5DF831A8E3D2E0020546C /* D_DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_DTests.swift; sourceTree = "<group>"; };
+		19C5DF8F1A8E3DB50020546C /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skills.swift; path = Models/Skills.swift; sourceTree = "<group>"; };
+		19C5DF921A8E3DE50020546C /* Abilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Abilities.swift; path = Models/Abilities.swift; sourceTree = "<group>"; };
+		19C5DF951A8E3E020020546C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Models/Player.swift; sourceTree = "<group>"; };
+		19C5DF981A8E3E2C0020546C /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Race.swift; path = Models/Race.swift; sourceTree = "<group>"; };
+		19C5DF9B1A8E3E490020546C /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Class.swift; path = Models/Class.swift; sourceTree = "<group>"; };
+		19C5DF9E1A8E3E650020546C /* Die.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Die.swift; path = Models/Die.swift; sourceTree = "<group>"; };
+		19C5DFA21A8E3EA20020546C /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		19C5DFA51A8E3EC80020546C /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Models/Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				19C5DF6A1A8E3D2E0020546C /* D&D */,
-				19C5DF801A8E3D2E0020546C /* D&DTests */,
+				19C5DF801A8E3D2E0020546C /* Tests */,
 				19C5DF691A8E3D2E0020546C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,8 +104,10 @@
 				19C5DF6D1A8E3D2E0020546C /* AppDelegate.swift */,
 				19C5DF6F1A8E3D2E0020546C /* ViewController.swift */,
 				19C5DF711A8E3D2E0020546C /* Main.storyboard */,
-				19C5DF741A8E3D2E0020546C /* Images.xcassets */,
 				19C5DF761A8E3D2E0020546C /* LaunchScreen.xib */,
+				19C5DF741A8E3D2E0020546C /* Images.xcassets */,
+				19C5DFA11A8E3E8A0020546C /* Helpers */,
+				19C5DF8D1A8E3D580020546C /* Models */,
 				19C5DF6B1A8E3D2E0020546C /* Supporting Files */,
 			);
 			path = "D&D";
@@ -95,12 +121,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		19C5DF801A8E3D2E0020546C /* D&DTests */ = {
+		19C5DF801A8E3D2E0020546C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				19C5DF831A8E3D2E0020546C /* D_DTests.swift */,
 				19C5DF811A8E3D2E0020546C /* Supporting Files */,
 			);
+			name = Tests;
 			path = "D&DTests";
 			sourceTree = "<group>";
 		};
@@ -110,6 +137,28 @@
 				19C5DF821A8E3D2E0020546C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19C5DF8D1A8E3D580020546C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19C5DF9E1A8E3E650020546C /* Die.swift */,
+				19C5DF951A8E3E020020546C /* Player.swift */,
+				19C5DF981A8E3E2C0020546C /* Race.swift */,
+				19C5DF9B1A8E3E490020546C /* Class.swift */,
+				19C5DF921A8E3DE50020546C /* Abilities.swift */,
+				19C5DF8F1A8E3DB50020546C /* Skills.swift */,
+				19C5DFA51A8E3EC80020546C /* Language.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		19C5DFA11A8E3E8A0020546C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				19C5DFA21A8E3EA20020546C /* Helpers.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C5DF931A8E3DE50020546C /* Abilities.swift in Sources */,
+				19C5DFA61A8E3EC80020546C /* Language.swift in Sources */,
 				19C5DF701A8E3D2E0020546C /* ViewController.swift in Sources */,
+				19C5DF9C1A8E3E490020546C /* Class.swift in Sources */,
+				19C5DF961A8E3E020020546C /* Player.swift in Sources */,
+				19C5DFA31A8E3EA20020546C /* Helpers.swift in Sources */,
+				19C5DF901A8E3DB50020546C /* Skills.swift in Sources */,
+				19C5DF991A8E3E2C0020546C /* Race.swift in Sources */,
+				19C5DF9F1A8E3E650020546C /* Die.swift in Sources */,
 				19C5DF6E1A8E3D2E0020546C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C5DF9D1A8E3E490020546C /* Class.swift in Sources */,
 				19C5DF841A8E3D2E0020546C /* D_DTests.swift in Sources */,
+				19C5DFA01A8E3E650020546C /* Die.swift in Sources */,
+				19C5DFA71A8E3EC80020546C /* Language.swift in Sources */,
+				19C5DFA41A8E3EA20020546C /* Helpers.swift in Sources */,
+				19C5DF911A8E3DB50020546C /* Skills.swift in Sources */,
+				19C5DF941A8E3DE50020546C /* Abilities.swift in Sources */,
+				19C5DF971A8E3E020020546C /* Player.swift in Sources */,
+				19C5DF9A1A8E3E2C0020546C /* Race.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
