@@ -10,9 +10,17 @@ enum Proficiency: Float {
     case None = 0, Half = 0.5, Single = 1, Double = 2
 }
 
+struct Alignment {
+    enum Order { case Lawful, Neutral, Chaotic }
+    enum Altruism { case Good, Neutral, Evil }
+    
+    let order: Order, altruism: Altruism
+}
+
 class Player {
     
     var name: String = ""
+    var alignment: Alignment = Alignment(order: .Neutral, altruism: .Neutral)
     
     var race: Race! = nil
     var classes: [Class] = []
