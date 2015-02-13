@@ -17,6 +17,11 @@ class Player {
     var race: Race! = nil
     var classes: [Class] = []
     
+    lazy var abilities: Abilities = Abilities(character: self)
+    lazy var skills: Skills = Skills(character: self)
+    
+    var bonus: Int { return level < 5 ? 2 : level < 9 ? 3 : level < 13 ? 4 : level < 17 ? 5 : level < 21 ? 6 : 0 }
+    
     var level: Int {
         var _level = 0
         for i in 0 ..< classes.count {
@@ -24,9 +29,6 @@ class Player {
         }
         return _level
     }
-    
-    lazy var abilities: Abilities = Abilities(character: self)
-    lazy var skills: Skills = Skills(character: self)
     
     var hitPoints: Int = 0
     var hitPointsMin: Int = 0
@@ -50,7 +52,5 @@ class Player {
     var speed: Int = 25 // ft/s
     
     var languages: [Language] = []
-    
-    var bonus: Int { return level < 5 ? 2 : level < 9 ? 3 : level < 13 ? 4 : level < 17 ? 5 : level < 21 ? 6 : 0 }
     
 }
