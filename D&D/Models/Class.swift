@@ -25,6 +25,8 @@ struct Class {
         return first + (rest * (level - 1))
     }
     
-    var constitution: Int { return level * character.abilities[.Constitution].modifier }
+    var constitution: Int {
+        return level * character.abilities[.Constitution].modifier
+    }
     
 }

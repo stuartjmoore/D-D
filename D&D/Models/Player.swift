@@ -28,13 +28,17 @@ class Player {
     lazy var abilities: Abilities = Abilities(character: self)
     lazy var skills: Skills = Skills(character: self)
     
-    var bonus: Int { return level < 5 ? 2 : level < 9 ? 3 : level < 13 ? 4 : level < 17 ? 5 : level < 21 ? 6 : 0 }
+    var bonus: Int {
+        return level < 5 ? 2 : level < 9 ? 3 : level < 13 ? 4 : level < 17 ? 5 : level < 21 ? 6 : 0
+    }
     
     var level: Int {
         var _level = 0
+        
         for i in 0 ..< classes.count {
             _level += classes[i].level
         }
+        
         return _level
     }
     
