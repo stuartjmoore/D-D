@@ -61,4 +61,21 @@ class Player {
     
     var languages: [Language] = []
     
+    func classWithName(className: Class.Name) -> (object: Class, index: Int)? {
+        for i in 0 ..< classes.count {
+            if classes[i].name == className {
+                return (object: classes[i], index: i)
+            }
+        }
+        
+        return nil
+    }
+    
+    func levelUp(className: Class.Name) {
+        if var (playerClass, i) = classWithName(className) {
+            playerClass.level++
+            classes[i] = playerClass
+        }
+    }
+    
 }

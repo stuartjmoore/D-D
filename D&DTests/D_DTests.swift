@@ -69,7 +69,15 @@ class D_DTests: XCTestCase {
         XCTAssertEqual(character.hitPointsMin, 0, "")
         XCTAssertEqual(character.hitPointsMax, 10, "")
         
-        XCTAssert(true, "Pass")
+        // MARK: -
+        
+        character.levelUp(.Rogue)
+        
+        // MARK: -
+        
+        XCTAssertEqual(character.level, 2, "")
+        XCTAssertEqual(character.hitPointsMin, 0, "")
+        XCTAssertEqual(character.hitPointsMax, 16, "")
     }
     
     override func tearDown() {
