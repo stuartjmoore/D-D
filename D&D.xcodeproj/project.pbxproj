@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17405E471A914B9C00390888 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17405E461A914B9C00390888 /* Armor.swift */; };
+		17405E481A914B9C00390888 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17405E461A914B9C00390888 /* Armor.swift */; };
 		19C5DF6E1A8E3D2E0020546C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF6D1A8E3D2E0020546C /* AppDelegate.swift */; };
 		19C5DF701A8E3D2E0020546C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DF6F1A8E3D2E0020546C /* ViewController.swift */; };
 		19C5DF731A8E3D2E0020546C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C5DF711A8E3D2E0020546C /* Main.storyboard */; };
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17405E461A914B9C00390888 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Armor.swift; path = Models/Armor.swift; sourceTree = "<group>"; };
 		19C5DF681A8E3D2E0020546C /* D&D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C5DF6C1A8E3D2E0020546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19C5DF6D1A8E3D2E0020546C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 				19C5DF9B1A8E3E490020546C /* Class.swift */,
 				19C5DF921A8E3DE50020546C /* Abilities.swift */,
 				19C5DF8F1A8E3DB50020546C /* Skills.swift */,
+				17405E461A914B9C00390888 /* Armor.swift */,
 				19C5DFA51A8E3EC80020546C /* Language.swift */,
 			);
 			name = Models;
@@ -264,6 +268,7 @@
 				19C5DF931A8E3DE50020546C /* Abilities.swift in Sources */,
 				19C5DFA61A8E3EC80020546C /* Language.swift in Sources */,
 				19C5DF701A8E3D2E0020546C /* ViewController.swift in Sources */,
+				17405E471A914B9C00390888 /* Armor.swift in Sources */,
 				19C5DF9C1A8E3E490020546C /* Class.swift in Sources */,
 				19C5DF961A8E3E020020546C /* Player.swift in Sources */,
 				19C5DFA31A8E3EA20020546C /* Helpers.swift in Sources */,
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19C5DF9D1A8E3E490020546C /* Class.swift in Sources */,
+				17405E481A914B9C00390888 /* Armor.swift in Sources */,
 				19C5DF841A8E3D2E0020546C /* D_DTests.swift in Sources */,
 				19C5DFA01A8E3E650020546C /* Die.swift in Sources */,
 				19C5DFA71A8E3EC80020546C /* Language.swift in Sources */,
@@ -472,6 +478,7 @@
 				19C5DF891A8E3D2E0020546C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19C5DF8A1A8E3D2E0020546C /* Build configuration list for PBXNativeTarget "D&DTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				19C5DF8C1A8E3D2E0020546C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
