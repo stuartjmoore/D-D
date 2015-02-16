@@ -28,19 +28,7 @@ class Player {
     lazy var abilities: Abilities = Abilities(character: self)
     lazy var skills: Skills = Skills(character: self)
     
-    lazy var armor: (body: Armor, shield: Armor) = (body: Armor(character: self), shield: Armor(character: self))
-    
-    var armorClass: Int {
-        return armor.body.armorClass + armor.shield.armorClass
-    }
-    
-    var armorDexterity: Int {
-        return min(armor.body.dexterity, abilities[.Dexterity].modifier)
-    }
-    
-    var armorWeight: Double {
-        return armor.body.weight + armor.shield.weight
-    }
+    lazy var armor: Armor = Armor(character: self)
     
     var bonus: Int {
         return level < 5 ? 2 : level < 9 ? 3 : level < 13 ? 4 : level < 17 ? 5 : level < 21 ? 6 : 0

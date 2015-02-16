@@ -9,7 +9,7 @@
 import UIKit
 
 struct Armor {
-    
+        
     enum Name {
         case None
     }
@@ -18,20 +18,44 @@ struct Armor {
         case None, Light, Medium, Heavy
     }
     
-    unowned let character: Player
-    let name: Name = .None
-    let type: Type = .None
-    let weight: Double = 0
-    var disadvantage: Bool = false
+    struct Worn {
+        unowned let character: Player
+        let name: Name = .None
+        let type: Type = .None
+        let weight: Double = 0
+        var disadvantage: Bool = false
+        
+        var armorClass: Int = 0
+        
+        var dexterity: Int {
+            return type == .Heavy ? 0 : type == .Medium ? 2 : character.abilities[.Dexterity].modifier
+        }
+        
+        init(character: Player) {
+            self.character = character
+        }
+    }
     
-    var armorClass: Int = 0
+    unowned let character: Player
+    var body: Worn
+    var shield: Worn
+    
+    var armorClass: Int {
+        return body.armorClass + shield.armorClass
+    }
     
     var dexterity: Int {
-        return type == .Heavy ? 0 : type == .Medium ? 2 : character.abilities[.Dexterity].modifier
+        return min(body.dexterity, character.abilities[.Dexterity].modifier)
+    }
+    
+    var weight: Double {
+        return body.weight + shield.weight
     }
     
     init(character: Player) {
         self.character = character
+        self.body = Worn(character: character)
+        self.shield = Worn(character: character)
     }
     
 }
