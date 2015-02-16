@@ -18,10 +18,11 @@ class D_DTests: XCTestCase {
     func testExample() {
         let character = Player()
         
-        character.race = Race(character: character, name: .Halfling)
+        character.name = "Bill Paxton"
+        character.alignment = Alignment(order: .Lawful, altruism: .Good)
         
-        let characterClass = Class(character: character, name: .Rogue, hitDie: Die(sides: 8), level: 1)
-        character.classes = [characterClass]
+        character.race = Race(character: character, name: .Halfling)
+        character.classes = [Class(character: character, name: .Rogue, hitDie: Die(sides: 8), level: 1)]
         
         character.abilities[.Strength].score = 12
         character.abilities[.Dexterity].score = 17
